@@ -153,7 +153,7 @@ export default function Home() {
 											</div>
 										</div>
 									</div>
-									<div className="item">
+									{/* <div className="item">
 										<div className="testimonials-item">
 											<a href="img/2nd-big-item.jpg" data-lightbox="image-1">
 												<img src="img/2nd-item.jpg" alt="" />
@@ -229,7 +229,7 @@ export default function Home() {
 												<span>$96.75</span>
 											</div>
 										</div>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>
