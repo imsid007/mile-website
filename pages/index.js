@@ -149,7 +149,7 @@ export default function Home() {
 											</a>
 											<div className="text-content">
 												<h4>Awesome Note Book</h4>
-												<span>$18.00</span>
+												<span>$18.001</span>
 											</div>
 										</div>
 									</div>
