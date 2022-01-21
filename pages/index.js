@@ -1,8 +1,29 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from "next/head";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+	const paralexRef = useRef(null);
+	const paralexRef1 = useRef(null);
+	const paralexRef2 = useRef(null);
+
+	function handleScroll() {
+		var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+		paralexRef.current.style.backgroundPosition =
+			"center calc(50% + " + scrollY * 0.5 + "px)";
+		paralexRef1.current.style.backgroundPosition =
+			"center calc(50% + " + scrollY * 0.5 + "px)";
+		paralexRef2.current.style.backgroundPosition =
+			"center calc(50% + " + scrollY * 0.5 + "px)";
+	}
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll, false);
+		return () => {
+			window.removeEventListener("scroll", handleScroll, false);
+		};
+	}, []);
 	return (
 		<>
 			{" "}
@@ -21,7 +42,7 @@ export default function Home() {
 
 				<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 			</Head>
-			<div>
+			<div id="test">
 				<div className="fixed-side-navbar">
 					<ul className="nav flex-column">
 						<li className="nav-item">
@@ -51,7 +72,11 @@ export default function Home() {
 						</li>
 					</ul>
 				</div>
-				<div className="parallax-content baner-content" id="home">
+				<div
+					ref={paralexRef}
+					className="parallax-content baner-content"
+					id="home"
+				>
 					<div className="container">
 						<div className="first-content">
 							<h1>MileWalkers</h1>
@@ -137,7 +162,11 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div className="parallax-content projects-content" id="portfolio">
+				<div
+					ref={paralexRef1}
+					className="parallax-content projects-content"
+					id="portfolio"
+				>
 					<div className="container">
 						<div className="row">
 							<div className="col-md-12">
@@ -301,7 +330,11 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div className="parallax-content contact-content" id="contact-us">
+				<div
+					ref={paralexRef2}
+					className="parallax-content contact-content"
+					id="contact-us"
+				>
 					<div className="container">
 						<div className="row">
 							<div className="col-md-6">
