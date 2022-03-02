@@ -458,16 +458,6 @@ export default function Home() {
 					</div>
 				</footer>
 			</div>
-			{/* <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-			<script
-				dangerouslySetInnerHTML={{
-					__html: `window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')`,
-				}}
-			></script>
-			<script src="scripts/js/vendor/bootstrap.min.js"></script>
-			<script src="scripts/js/plugins.js"></script>
-			<script src="scripts/js/main.js"></script>
-			<script src="scripts/footer.js"> </script> */}
 		</>
 	);
 }
