@@ -79,7 +79,7 @@ export default function Home() {
 				>
 					<div className="container">
 						<div className="first-content">
-							<h1>MileWalkers</h1>
+							<h1>test</h1>
 							<span>
 								The <em>journey</em> matters more than the destination.
 							</span>
