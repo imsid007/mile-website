@@ -40,7 +40,7 @@ export default function Home() {
 					rel="stylesheet"
 				/>
 
-				<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+				{/* <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> */}
 			</Head>
 			<div id="test">
 				<div className="fixed-side-navbar">
@@ -458,7 +458,7 @@ export default function Home() {
 					</div>
 				</footer>
 			</div>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			{/* <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 			<script
 				dangerouslySetInnerHTML={{
 					__html: `window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')`,
@@ -467,7 +467,7 @@ export default function Home() {
 			<script src="scripts/js/vendor/bootstrap.min.js"></script>
 			<script src="scripts/js/plugins.js"></script>
 			<script src="scripts/js/main.js"></script>
-			<script src="scripts/footer.js"> </script>
+			<script src="scripts/footer.js"> </script> */}
 		</>
 	);
 }
